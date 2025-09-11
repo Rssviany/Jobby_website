@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f2f4f6;
+  color: #212529;
+}
+
+.profile-container {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.profile-card {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.profile-card h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #3366cc;
+}
+
+.profile-card p {
+  margin: 0.6rem 0;
+  font-size: 16px;
+}
+
+.profile-card a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.profile-card a:hover {
+  text-decoration: underline;
+}
+
+.profile-card input[type="file"] {
+  margin-top: 1rem;
+}
+
+.profile-card button {
+  margin-top: 1rem;
+  padding: 10px 16px;
+  background-color: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(51, 102, 204, 0.2);
+}
+
+.profile-card button:hover {
+  background-color: #2a56a0;
+}
+
+.logout {
+  background-color: #dc3545;
+  margin-right: 1rem;
+}
+
+.logout:hover {
+  background-color: #b02a37;
+}
+
+.cleanup {
+  background-color: #20c997;
+  margin-left: 1rem;
+}
+
+.cleanup:hover {
+  background-color: #198754;
+}
+
+.message {
+  margin-top: 12px;
+  color: green;
+  font-weight: 500;
+}
+
+.applications {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.applications h3 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.application-card {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 5px solid #3366cc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.application-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #2d2d2d;
+}
+
+.application-card p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.inactive-btn {
+  margin-top: 10px;
+  background-color: #ffc107;
+  color: #212529;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.inactive-btn:hover {
+  background-color: #e0a800;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.bottom1 {
+  font-size: 16px;
+  color: #6c757d;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+
+.bottom1:hover {
+  background-color: #d3d3d3;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-card,
+  .applications {
+    padding: 1.5rem;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .profile-card button,
+  .logout,
+  .cleanup {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+
